@@ -18,8 +18,8 @@ Virtual Env (https://virtualenv.pypa.io/en/stable/) (creating a virtual environm
 
 ## How to use it?
 
-1. Install dependencies using pi
+1. Install dependencies using pip
 2. run python.exe > `import nltk` > `nltk.download()`
-3. Download the stopwords corpus
+3. Download the 'stopwords' corpus
 4. run `Cluster.py` choose the CSV file you want to cluster and the number of clusters
 5. View results
