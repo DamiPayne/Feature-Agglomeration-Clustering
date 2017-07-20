@@ -1,5 +1,7 @@
 # Feature Agglomeration Clustering
-Reads CSV text files and uses a Tfidf vectoriser to semantically cluster like sentences, then uses a hierarchical clustering algorithm to assign the words to n clusters  
+Reads CSV text files and uses a Tfidf vectoriser to semantically cluster like sentences, then uses a hierarchical clustering algorithm to assign the words to n clusters. 
+
+I have also included a Kmeans clustering example for comparision.
 
 ## Dependencies
 Numpy (http://www.numpy.org/)
