@@ -47,6 +47,7 @@ with open(r'Path') as g: #enables comparision to pre-labeled data-set
 Cats = flatten(Pre_Cat)
 
 if __name__ == "__main__":
+    #Example data set, uncomment to use
     # sentences = ["Nature is beautiful","I like green apples",
 	   #          "We should protect the trees","Fruit trees provide fruits",
 	   #          "Green apples are tasty","My name is Dami"]
