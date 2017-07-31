@@ -19,8 +19,8 @@ def word_tokenizer(text):
 def cluster_sentences(sentences, nb_of_clusters=5):
     tfidf_vectorizer = TfidfVectorizer(tokenizer=word_tokenizer,
 	                                    stop_words=stopwords.words('english'),
-	                                    max_df=0.99,
-	                                    min_df=0.01,
+	                                    max_df=0.9,
+	                                    min_df=0.05,
 	                                    lowercase=True)
     #builds a tf-idf matrix for the sentences
     tfidf_matrix_1 = tfidf_vectorizer.fit_transform(sentences)
@@ -34,14 +34,14 @@ def cluster_sentences(sentences, nb_of_clusters=5):
 
 import csv
 
-with open(r'C:\Sales\SP.csv') as f:
+with open(r"PATH" ) as f: #add the path to the CSV file
   reader = csv.reader(f)
   Pre_sentence = list(reader)
 
 flatten = lambda l: [item for sublist in l for item in sublist]
 sentences = flatten(Pre_sentence)
 
-with open(r'C:\Sales\Cat.csv') as g:
+with open(r'Path') as g: #enables comparision to pre-labeled data-set
   reader_cat = csv.reader(g)
   Pre_Cat = list(reader_cat)
 Cats = flatten(Pre_Cat)
